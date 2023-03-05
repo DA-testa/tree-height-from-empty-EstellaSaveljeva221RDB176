@@ -20,7 +20,7 @@ def compute_height(n, parents):
 
 
 def main():
-    Print("[!] \input form keyboard and from files (capital i or capital F)")
+    print("[!] \tUse an input to choose files or input - F or I ?")
     textInput = input(":").upper()
     
     if "F" in textInput:
