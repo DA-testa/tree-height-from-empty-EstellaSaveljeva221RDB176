@@ -5,7 +5,7 @@ import threading
 
 
 def compute_height(n, parents):
-    max_height = 0
+    max_height = [0] * n
     for i in range(n):
         node = i
         h = 0
