@@ -5,16 +5,24 @@ import threading
 
 
 def compute_height(n, parents):
-    # Write this function
     max_height = 0
-    # Your code here
+    for i in range(n):
+        node = i
+        h = 0
+        while node != -1:
+            if max_height[node] != 0:
+                h += max_height[node]
+                break
+            h += 1
+            node = parents[node]
+        max_height[i] = h
     return max_height
 
 
 def main():
     # implement input form keyboard and from files
     Print("input form keyboard and from files (capital i or capital F)")
-    textInput = input().upper()
+    textInput = input(":").upper()
     
     if textInput == "I":
         
